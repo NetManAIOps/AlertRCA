@@ -1,0 +1,79 @@
+timestamp,object,fault_description,kpi,name,node_type,root_cause_node
+1586534700,docker,CPU fault,container_cpu_used,docker_003,Docker CPU,docker_003 CPU
+1586536500,docker,network delay,,docker_002,Docker,docker_002
+1586538600,docker,network delay,,docker_001,Docker,docker_001
+1586540400,docker,CPU fault,container_cpu_used,docker_004,Docker CPU,docker_004 CPU
+1586542500,db,db connection limit,Proc_User_Used_Pct;Proc_Used_Pct;Sess_Connect,db_007,DB Session,db_007 Session
+1586544600,docker,CPU fault,container_cpu_used,docker_002,Docker CPU,docker_002 CPU
+1586546400,docker,network delay,,docker_003,Docker,docker_003
+1586548500,docker,network loss,,docker_003,Docker,docker_003
+1586551200,docker,CPU fault,container_cpu_used,docker_008,Docker CPU,docker_008 CPU
+1586552700,docker,network loss,,docker_007,Docker,docker_007
+1586555100,db,db  close,On_Off_State;tnsping_result_time,db_003,DB State,db_003 State
+1590077220,db,db  close,On_Off_State;tnsping_result_time,db_003,DB State,db_003 State
+1590079680,docker,CPU fault,container_cpu_used,docker_001,Docker CPU,docker_001 CPU
+1590081480,docker,network delay,,docker_005,Docker,docker_005
+1590083280,os,network delay,Sent_queue;Received_queue,os_018,OS Network,os_018 Network
+1590085080,docker,CPU fault,container_cpu_used,docker_005,Docker CPU,docker_005 CPU
+1590095880,docker,network delay,,docker_007,Docker,docker_007
+1590097680,docker,network delay,,docker_006,Docker,docker_006
+1590163500,docker,CPU fault,container_cpu_used,docker_004,Docker CPU,docker_004 CPU
+1590165600,db,db connection limit,Proc_User_Used_Pct;Proc_Used_Pct;Sess_Connect,db_003,DB Session,db_003 Session
+1590167760,os,network loss,Sent_queue;Received_queue,os_021,OS Network,os_021 Network
+1590174000,docker,network delay,,docker_006,Docker,docker_006
+1590176160,os,network delay,Sent_queue;Received_queue,os_021,OS Network,os_021 Network
+1590180420,docker,CPU fault,container_cpu_used,docker_006,Docker CPU,docker_006 CPU
+1590182400,docker,network delay,,docker_005,Docker,docker_005
+1590184500,docker,network loss,,docker_007,Docker,docker_007
+1590250620,docker,network loss,,docker_004,Docker,docker_004
+1590256020,db,db  close,On_Off_State;tnsping_result_time,db_007,DB State,db_007 State
+1590259620,docker,network loss,,docker_002,Docker,docker_002
+1590261420,docker,CPU fault,container_cpu_used,docker_003,Docker CPU,docker_003 CPU
+1590265020,docker,CPU fault,container_cpu_used,docker_006,Docker CPU,docker_006 CPU
+1590266820,docker,network delay,,docker_004,Docker,docker_004
+1590342420,os,network delay,Sent_queue;Received_queue,os_020,OS Network,os_020 Network
+1590349620,os,network loss,Sent_queue;Received_queue,os_017,OS Network,os_017 Network
+1590353220,db,db  close,On_Off_State;tnsping_result_time,db_003,DB State,db_003 State
+1590424320,docker,network loss,,docker_003,Docker,docker_003
+1590430140,db,db connection limit,Proc_User_Used_Pct;Proc_Used_Pct;Sess_Connect,db_007,DB Session,db_007 Session
+1590431940,docker,CPU fault,container_cpu_used,docker_008,Docker CPU,docker_008 CPU
+1590433740,os,network delay,Sent_queue;Received_queue,os_021,OS Network,os_021 Network
+1590435540,os,network loss,Sent_queue;Received_queue,os_018,OS Network,os_018 Network
+1590437700,os,network delay,Sent_queue;Received_queue,os_020,OS Network,os_020 Network
+1590441300,docker,CPU fault,container_cpu_used,docker_002,Docker CPU,docker_002 CPU
+1590510180,os,network delay,Sent_queue;Received_queue,os_018,OS Network,os_018 Network
+1590511980,os,network delay,Sent_queue;Received_queue,os_017,OS Network,os_017 Network
+1590513780,docker,CPU fault,container_cpu_used,docker_006,Docker CPU,docker_006 CPU
+1590515580,db,db connection limit,Proc_User_Used_Pct;Proc_Used_Pct;Sess_Connect,db_003,DB Session,db_003 Session
+1590517380,db,db  close,On_Off_State;tnsping_result_time,db_007,DB State,db_007 State
+1590519180,db,db connection limit,Proc_User_Used_Pct;Proc_Used_Pct;Sess_Connect,db_007,DB Session,db_007 Session
+1590520980,docker,network delay,,docker_001,Docker,docker_001
+1590525540,docker,network loss,,docker_007,Docker,docker_007
+1590527340,docker,CPU fault,container_cpu_used,docker_001,Docker CPU,docker_001 CPU
+1590529140,os,network delay,Sent_queue;Received_queue,os_021,OS Network,os_021 Network
+1590598020,docker,CPU fault,container_cpu_used,docker_001,Docker CPU,docker_001 CPU
+1590599820,docker,network delay,,docker_001,Docker,docker_001
+1590607020,docker,network delay,,docker_001,Docker,docker_001
+1590608820,os,network loss,Sent_queue;Received_queue,os_018,OS Network,os_018 Network
+1590614220,docker,network loss,,docker_008,Docker,docker_008
+1590689460,db,db connection limit,Proc_User_Used_Pct;Proc_Used_Pct;Sess_Connect,db_003,DB Session,db_003 Session
+1590691260,docker,CPU fault,container_cpu_used,docker_008,Docker CPU,docker_008 CPU
+1590694860,docker,CPU fault,container_cpu_used,docker_001,Docker CPU,docker_001 CPU
+1590700260,docker,network delay,,docker_006,Docker,docker_006
+1590768780,os,network loss,Sent_queue;Received_queue,os_021,OS Network,os_021 Network
+1590770580,docker,network loss,,docker_005,Docker,docker_005
+1590775980,docker,network loss,,docker_001,Docker,docker_001
+1590781380,os,network delay,Sent_queue;Received_queue,os_020,OS Network,os_020 Network
+1590783180,docker,CPU fault,container_cpu_used,docker_002,Docker CPU,docker_002 CPU
+1590786780,os,network loss,Sent_queue;Received_queue,os_018,OS Network,os_018 Network
+1590788580,docker,network delay,,docker_002,Docker,docker_002
+1590855420,docker,network delay,,docker_007,Docker,docker_007
+1590857220,docker,network delay,,docker_001,Docker,docker_001
+1590860820,docker,network loss,,docker_008,Docker,docker_008
+1590862620,docker,network delay,,docker_008,Docker,docker_008
+1590864420,os,network delay,Sent_queue;Received_queue,os_021,OS Network,os_021 Network
+1590866220,os,network delay,Sent_queue;Received_queue,os_017,OS Network,os_017 Network
+1590868020,db,db connection limit,Proc_User_Used_Pct;Proc_Used_Pct;Sess_Connect,db_003,DB Session,db_003 Session
+1590869820,docker,CPU fault,container_cpu_used,docker_004,Docker CPU,docker_004 CPU
+1590871620,docker,network delay,,docker_006,Docker,docker_006
+1590875280,docker,network loss,,docker_003,Docker,docker_003

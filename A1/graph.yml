@@ -1,0 +1,580 @@
+################################################################################################
+## KPI nodes
+################################################################################################
+- class: node
+  type: OSB
+  params:
+    id:
+      - os_021
+      - os_022
+  id: "{id}"
+  metrics:
+    - "{id}##count"
+    - "{id}##cost"
+    - "{id}##proc"
+    - "{id}##succ_rate"
+
+- class: node
+  type: OS
+  params:
+    id:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+  id: "{id}"
+  metrics:
+    - "{id}##fake"
+
+- class: node
+  type: OS Network
+  params:
+    os:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+      - os_021
+      - os_022
+  id: "{os} Network"
+  metrics:
+    - "{os}##Sent_queue"
+    - "{os}##Received_queue"
+    - "{os}##Incoming_network_traffic"
+    - "{os}##Received_errors_packets"
+    - "{os}##Outgoing_network_traffic"
+    - "{os}##Sent_errors_packets"
+    - "{os}##Received_packets"
+    - "{os}##Sent_packets"
+    - "{os}##ss_total"
+    - "{os}##Send_total"
+    - "{os}##Recv_total"
+
+- class: node
+  type: OS Load
+  params:
+    os:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+      - os_021
+      - os_022
+  id: "{os} Load"
+  metrics:
+    - "{os}##Processor_load_15_min"
+    - "{os}##Processor_load_1_min"
+    - "{os}##Processor_load_5_min"
+    - "{os}##CPU_util_pc"
+    - "{os}##CPU_user_time"
+    - "{os}##CPU_system_time"
+    - "{os}##CPU_idle_pct"
+    - "{os}##CPU_iowait_time"
+    - "{os}##Num_of_processes"
+    - "{os}##Zombie_Process"
+    - "{os}##System_block_queue_length"
+    - "{os}##System_wait_queue_length"
+    - "{os}##Received_queue"
+    - "{os}##Sent_queue"
+    - "{os}##Num_of_running_processes"
+    - "{os}##Buffers_used"
+    - "{os}##CPU_util_pct"
+    - "{os}##Cpu_num"
+    - "{os}##CPU_frequency"
+    - "{os}##CPU_pused"
+    - "{os}##CPU_number"
+    - "{os}##CPU_kernel_number"
+
+- class: node
+  type: OS Memory
+  params:
+    os:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+      - os_021
+      - os_022
+  id: "{os} Memory"
+  metrics:
+    - "{os}##Swap_used_pct"
+    - "{os}##Memory_available"
+    - "{os}##Buffers_used"
+    - "{os}##Cache_used"
+    - "{os}##Memory_free"
+    - "{os}##Memory_used_pct"
+    - "{os}##Memory_total"
+    - "{os}##Memory_used"
+    - "{os}##Shared_memory"
+    - "{os}##Memory_available_pct"
+    - "{os}##Page_po"
+    - "{os}##Page_pi"
+
+- class: node
+  type: OS Availability
+  params:
+    os:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+      - os_021
+      - os_022
+  id: "{os} Availability"
+  metrics:
+    - "{os}##Agent_ping"
+    - "{os}##ICMP_ping"
+
+- class: node
+  type: OS Disk
+  params:
+    os:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+      - os_021
+      - os_022
+  id: "{os} Disk"
+  metrics:
+    - "{os}##Disk_io_util"
+    - "{os}##Disk_svctm"
+    - "{os}##Disk_await"
+    - "{os}##Disk_wr_kbs"
+    - "{os}##Disk_rd_kbs"
+    - "{os}##Disk_wr_ios"
+    - "{os}##Disk_rd_ios"
+    - "{os}##Disk_avgqu_sz"
+    - "{os}##Disk_io_util"
+    - "{os}##FS_used_pct"
+    - "{os}##FS_used_space"
+    - "{os}##FS_total_space"
+    - "{os}##FS_max_avail"
+    - "{os}##FS_max_util"
+    - "{os}##Used_inodes"
+    - "{os}##Used_disk_space_pct"
+    - "{os}##Used_disk_space"
+    - "{os}##Used_inodes_pct"
+    - "{os}##Free_disk_space"
+    - "{os}##Total_disk_space"
+    - "{os}##Total_inodes"
+    - "{os}##Free_inodes"
+
+
+############################################################################################################
+## Docker nodes
+############################################################################################################
+
+- class: node
+  type: Docker
+  params:
+    id:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008
+  id: "{id}"
+  metrics:
+    - "{id}##count"
+    - "{id}##cost"
+    - "{id}##proc"
+    - "{id}##succ_rate"
+
+
+- class: node
+  type: Docker CPU
+  params:
+    docker:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008
+  id: "{docker} CPU"
+  metrics:
+    - "{docker}##container_cpu_used"
+
+- class: node
+  type: Docker FULL GC
+  params:
+    docker:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008
+  id: "{docker} FULL GC"
+  metrics:
+    - "{docker}##container_fgc"
+    - "{docker}##container_fgct"
+
+
+- class: node
+  type: Docker Memory
+  params:
+    docker:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008
+  id: "{docker} Memory"
+  metrics:
+    - "{docker}##container_mem_used"
+
+
+- class: node
+  type: Docker Session
+  params:
+    docker:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008
+  id: "{docker} Session"
+  metrics:
+    - "{docker}##container_session_used"
+
+
+- class: node
+  type: Docker Thread
+  params:
+    docker:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008
+  id: "{docker} Thread"
+  metrics:
+    - "{docker}##container_thread_idle"
+    - "{docker}##container_thread_running"
+    - "{docker}##container_thread_total"
+    - "{docker}##container_thread_used_pct"
+
+############################################################################################################
+## DB nodes
+############################################################################################################
+
+- class: node
+  type: DB
+  params:
+    id:
+      - db_003
+      - db_007
+      - db_009
+  id: "{id}"
+  metrics:
+    - "{id}##count"
+    - "{id}##cost"
+    - "{id}##proc"
+    - "{id}##succ_rate"
+
+- class: node
+  type: DB Session
+  params:
+    db:
+      - db_003
+      - db_007
+      - db_009
+  id: "{db} Session"
+  metrics:
+    - "{db}##Proc_User_Used_Pct"
+    - "{db}##Proc_Used_Pct"
+    - "{db}##Sess_Connect"
+    - "{db}##Sess_Active"
+    - "{db}##Sess_Connect"
+    - "{db}##Sess_Used_Temp"
+    - "{db}##Sess_Used_Undo"
+    - "{db}##Session_pct"
+
+- class: node
+  type: DB Usage
+  params:
+    db:
+      - db_003
+      - db_007
+      - db_009
+  id: "{db} Usage"
+  metrics:
+    - "{db}##New_Tbs_Used_Pct"
+    - "{db}##New_Tbs_Free_Gb"
+    - "{db}##Asm_Free_Tb"
+    - "{db}##Used_Tbs_Size"
+    - "{db}##Total_Tbs_Size"
+    - "{db}##PGA_used_total"
+    - "{db}##New_Tbs_Free_Gb"
+    - "{db}##DbFile_Used_Pct"
+    - "{db}##Tbs_Free_Gb"
+    - "{db}##Tbs_Used_Pct"
+    - "{db}##TempTbs_Pct"
+    - "{db}##Redo_Per_Sec"
+
+
+- class: node
+  type: DB Load
+  params:
+    db:
+      - db_003
+      - db_007
+      - db_009
+  id: "{db} Load"
+  metrics:
+    - "{db}##CPU_free_pct"
+    - "{db}##LFParaWrite_Per_Sec"
+    - "{db}##DFParaWrite_Per_Sec"
+    - "{db}##LFSync_Per_Sec"
+    - "{db}##SctRead_Per_Sec"
+    - "{db}##SeqRead_Per_Sec"
+    - "{db}##SEQ_Used_Pct"
+    - "{db}##PGA_Used_Pct"
+    - "{db}##SeqRead_Per_Sec"
+    - "{db}##SeqRead_Per_Sec"
+    - "{db}##SeqRead_Per_Sec"
+    - "{db}##CPU_Used_Pct"
+    - "{db}##Physical_Read_Per_Sec"
+    - "{db}##Logic_Read_Per_Sec"
+    - "{db}##Login_Per_Sec"
+    - "{db}##Call_Per_Sec"
+    - "{db}##Exec_Per_Sec"
+    - "{db}##TPS_Per_Sec"
+    - "{db}##AIOS"
+    - "{db}##AWS"
+    - "{db}##ACS"
+    - "{db}##Tbs_Used_Pct"
+    - "{db}##Sess_Connect"
+    - "{db}##UndoTbs_Pct"
+    - "{db}##User_Commit"
+    - "{db}##CPU_pused"
+    - "{db}##User_Commit"
+
+- class: node
+  type: DB Memory
+  params:
+    db:
+      - db_003
+      - db_007
+      - db_009
+  id: "{db} Memory"
+  metrics:
+    - "{db}##MEM_Total"
+    - "{db}##MEM_Used"
+    - "{db}##MEM_Used_Pct"
+    - "{db}##MEM_real_util"
+
+- class: node
+  type: DB State
+  params:
+    db:
+      - db_003
+      - db_007
+      - db_009
+  id: "{db} State"
+  metrics:
+    - "{db}##On_Off_State"
+    - "{db}##tnsping_result_time"
+    - "{db}##Hang"
+    - "{db}##Row_Lock"
+    - "{db}##DbTime"
+
+############################################################################################################
+## Call edges
+############################################################################################################
+
+- class: edge
+  type: call
+  params:
+    src:
+      - os_022
+      - os_022
+      - os_021
+      - os_021
+    dst:
+      - docker_002
+      - docker_001
+      - docker_003
+      - docker_004
+  src: "{src}"
+  dst: "{dst}"
+
+
+- class: edge
+  type: call
+  params:
+    src:
+      - docker_002
+      - docker_002
+      - docker_002
+      - docker_002
+      - docker_001
+      - docker_001
+      - docker_001
+      - docker_001
+    dst:
+      - docker_007
+      - docker_008
+      - db_007
+      - db_009
+      - docker_007
+      - docker_008
+      - db_007
+      - db_009
+  src: "{src}"
+  dst: "{dst}"
+
+- class: edge
+  type: call
+  params:
+    src:
+      - docker_003
+      - docker_003
+      - docker_003
+      - docker_003
+      - docker_004
+      - docker_004
+      - docker_004
+      - docker_004
+    dst:
+      - docker_005
+      - docker_006
+      - db_007
+      - db_009
+      - docker_005
+      - docker_006
+      - db_007
+      - db_009
+  src: "{src}"
+  dst: "{dst}"
+
+- class: edge
+  type: call
+  params:
+    src:
+      - docker_007
+      - docker_008
+      - docker_006
+      - docker_005
+    dst:
+      - db_003
+      - db_003
+      - db_003
+      - db_003
+  src: "{src}"
+  dst: "{dst}"
+
+
+############################################################################################################
+## OS Metric edges
+############################################################################################################
+
+- class: edge
+  type: deployment
+  product: True
+  params:
+    os:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+      - os_021
+      - os_022
+    type:
+      - Network
+      - Load
+      - Availability
+      - Memory
+      - Disk
+  src: "{os}"
+  dst: "{os} {type}"
+
+############################################################################################################
+## Docker Metric edges
+############################################################################################################
+
+- class: edge
+  type: deployment
+  product: True
+  params:
+    docker:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008
+    type:
+      - CPU
+      - FULL GC
+      - Memory
+      - Session
+      - Thread
+  src: "{docker}"
+  dst: "{docker} {type}"
+
+- class: edge
+  type: deployment
+  params:
+    docker:
+      - docker_001
+      - docker_002
+      - docker_003
+      - docker_004
+      - docker_005
+      - docker_006
+      - docker_007
+      - docker_008 
+    os:
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+      - os_017
+      - os_018
+      - os_019
+      - os_020
+  src: "{docker}"
+  dst: "{os}"
+
+
+############################################################################################################
+## DB Metric edges
+############################################################################################################
+
+- class: edge
+  type: deployment
+  product: True
+  params:
+    db:
+      - db_003
+      - db_007
+      - db_009
+    type:
+      - Session
+      - State
+      - Usage
+      - Load
+      - Memory
+  src: "{db}"
+  dst: "{db} {type}"
