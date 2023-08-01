@@ -27,4 +27,5 @@
 
 Run:
 python -m AlertRCA --dataset A1 --modeldir A1
+
 python -m AlertRCA --dataset A2 --modeldir A2
